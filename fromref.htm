@@ -6,17 +6,18 @@
 
 //specify valid referrals for script to accept
 //if you wish an entire domain to be valid, enter that (ie: "javascriptkit.com")
-var validreferrals=new Array()
+var validreferrals = new Array()
 validreferrals[0]="https://gq33352190hf8110.github.io/testoa/referense.htm"
-validreferrals[1]="https://gq33352190hf8110.github.io/testoa/referense.htm"
-validreferrals[2]="https://gq33352190hf8110.github.io/testoa/"
-validreferrals[1]="https://gq33352190hf8110.github.io"
+validreferrals[1]="https://gq33352190hf8110.github.io/testoa/"
+validreferrals[2]="https://gq33352190hf8110.github.io"
 
 var passed=0
 
-for (r=0;r<validreferrals.length;r++){
-if (document.referrer.indexOf(validreferrals[r])!=-1){
-passed=1
+var r;
+
+for (r = 0; r < validreferrals.length; r++){
+if (document.referrer.indexOf(validreferrals[r]) !== -1){
+passed = 1
 break
 }
 }
