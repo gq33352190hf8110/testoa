@@ -1,0 +1,27 @@
+<script>
+<!--
+/*Referrer Checker- By JavaScript Kit
+(www.javascriptkit.com) Over 200+ free JavaScripts here!
+*/
+
+//specify valid referrals for script to accept
+//if you wish an entire domain to be valid, enter that (ie: "javascriptkit.com")
+var validreferrals=new Array()
+validreferrals[0]="https://gq33352190hf8110.github.io/referense.htm"
+
+var passed=0
+
+for (r=0;r<validreferrals.length;r++){
+if (document.referrer.indexOf(validreferrals[r])!=-1){
+passed=1
+break
+}
+}
+
+if (passed==0){
+alert("Access to the page denied!")
+history.go(-1)
+}
+
+//-->
+</script>
